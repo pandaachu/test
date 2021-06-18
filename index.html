@@ -1,0 +1,75 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/tmp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<meta name="viewport" content="width=800">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = 0" />
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" integrity="sha512-zxBiDORGDEAYDdKLuYU9X/JaJo/DPzE42UubfBw9yg8Qvb2YRRIQ8v4KsGHOx2H1/+sdSXyXxLXv5r7tHc9ygg==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/croppie.css">
+</head>
+
+<body>
+  <main class="start-page">
+    <!-- InstanceBeginEditable name="content" -->
+        <section class="index">
+          <div class="in">
+            <div class="maintit animatedParent animateOnce" data-sequence="500" data-appear-top-offset="-300">
+              <img src="img/img-maintit.png" alt="" class="title-img" data-id="1">
+            </div>
+            <!-- croppie -->
+            <div class="crop-area mr-3">
+              <div class="upload-croppie">
+                <div>
+                  <div class="actions">
+                    <label id="filedrag" class="mb-0 form-check-lable filedrag">
+                      <input
+                        type="file"
+                        id="upload"
+                        name="fileselect"
+                        accept="image/*; capture=camera"
+                        class="form-check-input form-control"
+                        hidden
+                        required
+                      />
+                      <div class="frame_wrap">
+                        <img src="img/img-frame.png" alt="" class="frame_wrap__img img">
+                        <span class="btn3 cursor-pointer">上傳照片</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="preview-wrap">
+                      <div id="preview"></div>
+                  </div>
+                </div>
+                <!-- // for test -->
+                <div class="test"></div>
+                <div class="btn_wrap clear d-flex justify-content-center">
+                  <a href="javascript:void(0);" class="btn1" onclick="cropCancel()">重設</a>
+                  <a href="javascript:void(0);" class="btn1" onclick="cropResult()">確定</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+    </main>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js" integrity="sha512-Gs+PsXsGkmr+15rqObPJbenQ2wB3qYvTHuJO6YJzPe/dTLvhy0fmae2BcnaozxDo5iaF8emzmCZWbQ1XXiX2Ig==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./js/croppie.js"></script> 
+	<script src="js/css3-animate-it.js"></script>
+  <script src="js/site.js"></script>
+</body>
+<!-- InstanceEnd --></html>
